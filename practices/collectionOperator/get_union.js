@@ -1,8 +1,8 @@
 'use strict';
 
 function a_is_contains(collection_a, elem) {
-  for (let i = 0; i < collection_a.length; i++) {
-    if (collection_a[i] === elem) {
+  for (let a_elem of collection_a) {
+    if (a_elem === elem) {
       return true;
     }
   }
@@ -11,9 +11,9 @@ function a_is_contains(collection_a, elem) {
 
 function get_union(collection_a, collection_b) {
   //在这里写入代码
-  for (let i = 0; i < collection_b.length; i++) {
-    if (!a_is_contains(collection_a, collection_b[i])) {
-      collection_a.push(collection_b[i]);
+  for (let elem of collection_b) {
+    if (!a_is_contains(collection_a, elem)) {
+      collection_a.push(elem);
     }
   }
   return collection_a;
