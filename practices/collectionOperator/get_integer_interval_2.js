@@ -5,8 +5,8 @@ function is_even(number) {
 }
 
 function get_decrease_even_interval(number_a, number_b) {
-  var interval = [];
-  for (var i = number_a; i >= number_b; i--) {
+  let interval = [];
+  for (let i = number_a; i >= number_b; i--) {
     if (is_even(i)) {
       interval.push(i);
     }
@@ -15,8 +15,8 @@ function get_decrease_even_interval(number_a, number_b) {
 }
 
 function get_increase_even_interval(number_a, number_b) {
-  var interval = [];
-  for (var i = number_a; i <= number_b; i++) {
+  let interval = [];
+  for (let i = number_a; i <= number_b; i++) {
     if (is_even(i)) {
       interval.push(i);
     }

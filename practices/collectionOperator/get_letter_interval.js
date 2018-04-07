@@ -1,16 +1,16 @@
 'use strict';
 
 function get_decrease_interval(number_a, number_b) {
-  var interval = [];
-  for (var i = number_a; i >= number_b; i--) {
+  let interval = [];
+  for (let i = number_a; i >= number_b; i--) {
     interval.push(String.fromCharCode(96 + i));
   }
   return interval;
 }
 
 function get_increase_interval(number_a, number_b) {
-  var interval = [];
-  for (var i = number_a; i <= number_b; i++) {
+  let interval = [];
+  for (let i = number_a; i <= number_b; i++) {
     interval.push(String.fromCharCode(96 + i));
   }
   return interval;
