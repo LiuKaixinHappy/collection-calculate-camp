@@ -1,8 +1,16 @@
 'use strict';
 
-function choose_no_common_elements(collection_a, collection_b) {
+function not_contains(collection_b, elem) {
+  for (let i of collection_b) {
+    if (i === elem) {
+      return false;
+    }
+  }
+  return true;
+}
 
-  //在这里写入代码
+function choose_no_common_elements(collection_a, collection_b) {
+  return collection_a.filter(elem => not_contains(collection_b, elem));
 }
 
 module.exports = choose_no_common_elements;
