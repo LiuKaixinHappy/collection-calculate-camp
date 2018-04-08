@@ -1,12 +1,7 @@
 'use strict';
 
 function is_contain(collection_b, elem) {
-  for (let i of collection_b) {
-    if (i === elem) {
-      return true;
-    }
-  }
-  return false;
+  return collection_b.filter(x => x === elem).length !== 0;
 }
 
 function choose_common_elements(collection_a, collection_b) {

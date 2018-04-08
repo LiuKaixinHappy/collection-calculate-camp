@@ -1,12 +1,7 @@
 'use strict';
 
 function not_contains(collection_b, elem) {
-  for (let i of collection_b) {
-    if (i === elem) {
-      return false;
-    }
-  }
-  return true;
+  return collection_b.filter(x => x === elem).length === 0;
 }
 
 function choose_no_common_elements(collection_a, collection_b) {
