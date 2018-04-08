@@ -4,7 +4,7 @@ let calculate_median = function(collection){
   if (even_index_elem.length % 2 === 0) {
     return (even_index_elem[even_index_elem.length / 2] + even_index_elem[even_index_elem.length / 2 - 1]) / 2;
   } else {
-    return even_index_elem[(even_index_elem.length - 1) / 2] / 2;
+    return even_index_elem[(even_index_elem.length - 1) / 2];
   }
 };
 module.exports = calculate_median;
