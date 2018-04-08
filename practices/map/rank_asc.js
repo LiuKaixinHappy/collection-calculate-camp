@@ -1,5 +1,5 @@
 'use strict';
-var rank_asc = function(collection){
+let rank_asc = function(collection){
   return collection.sort((x, y) => y - x);
 };
 
