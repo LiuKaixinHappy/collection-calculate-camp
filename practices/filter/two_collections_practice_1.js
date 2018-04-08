@@ -1,8 +1,16 @@
 'use strict';
 
-function choose_common_elements(collection_a, collection_b) {
+function is_contain(collection_b, elem) {
+  for (let i of collection_b) {
+    if (i === elem) {
+      return true;
+    }
+  }
+  return false;
+}
 
-  //在这里写入代码
+function choose_common_elements(collection_a, collection_b) {
+  return collection_a.filter(elem => is_contain(collection_b, elem));
 }
 
 module.exports = choose_common_elements;
